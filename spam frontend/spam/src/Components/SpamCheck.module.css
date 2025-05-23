@@ -1,0 +1,59 @@
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+textarea {
+    min-height: 120px;
+    padding: 1rem;
+    font-size: 20px;
+    resize: vertical;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+  
+textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+  
+button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #61a0e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #357ab8;
+}
+
+  
+.result {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+  
+.spam {
+    color: red;
+}
+  
+.ham {
+    color: green;
+}
