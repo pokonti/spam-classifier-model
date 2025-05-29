@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  backend:
+    build: ./spam
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./spam:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build: ./spam-frontend/spam
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
